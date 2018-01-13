@@ -34,6 +34,9 @@ After the scripts for interfacing with the LapSRN were complete, an application 
 
 ### Results
 
+![Alt Text](https://github.com/vrishabcommuri/Laplacian-CNN-Super-Resolution/blob/master/samples/result_1.gif)
+![Alt Text](https://github.com/vrishabcommuri/Laplacian-CNN-Super-Resolution/blob/master/samples/result_2.gif)
+
 ### TODO
 
 
