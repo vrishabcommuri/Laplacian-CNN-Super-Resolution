@@ -1,9 +1,0 @@
-Modifications:
-
-Most of the details of this project are outlined in the overview file. The signficant changes made are:
-
-1. Switch from a Generative Adversarial Network to a Laplacian Convolutional network
-
-2. No interface between multiple computers. This is very easy to implement, but unfortunately there is no time to integrate it with the existing application.
-
-3. A much heavier emphasis was placed on the gui.
