@@ -30,17 +30,31 @@ The image upscaling process carried out by the LapSRN. An input is fed into the 
 
 ***
 
-After the scripts for interfacing with the LapSRN were complete, an application was created to allow the user to easily edit and send downsampled images. The application utilizes opencv and tkinter to interface with the user's webcam and create the user interface respectively.
+After the scripts for interfacing with the LapSRN were complete, an application was created to allow the user to easily edit and save downsampled images and upsample the downsampled images. The application utilizes opencv and tkinter to interface with the user's webcam and create the user interface respectively.
 
 ### Results
+
+Using this network, images of 512 x 512 pixels were downsampled using bicubic interpolation to 128 x 128 pixels, saved, and upsampled back to 512 x 512 pixels. The results presented with good preservation of quality and a compression ratio of 16:1 (512x512/128x128)! Here is a side-by-side comparison of an input and output pair:
 
 <p align="center"> 
 <img src="https://github.com/vrishabcommuri/Laplacian-CNN-Super-Resolution/blob/master/samples/result_1.gif">
 </p>
+
+The input sizes can be any square size as well. As such, the input size can be slowly increased creating some very nice animations of the outputs. These outputs have input sizes ranging from 32 x 32 to 256 x 256 pixels and output sizes ranging from 128 x 128 to 1024 x 1024 pixels. 
+
 <p align="center"> 
 <img src="https://github.com/vrishabcommuri/Laplacian-CNN-Super-Resolution/blob/master/samples/result_2.gif">
 </p>
+<p align="center"> 
+<img src="https://github.com/vrishabcommuri/Laplacian-CNN-Super-Resolution/blob/master/samples/result_3.gif">
+</p>
+
+If you liked these animations, here is a fun video I made detailing the project's UI and showing some more of the network's outputs. Since the output image sequences are not constrained to the gif file format, they look a lot better in the video as well. 
+
+[Enjoy!](https://youtu.be/lE5S5sHzwXE)
 
 ### TODO
 
+* Enable interface between different machines. 
+* Enable the user to send color images
 
