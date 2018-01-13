@@ -14,20 +14,22 @@ The methods that will be utilized to complete this project are outlined in this 
 The components for this project, inluding libraries, hardware, and the LapSRN network are listed below. All code will be implemented in Python.
 
 1. A LapSRN coded in the Pytorch deep learning library
-2. A graphichal user interface coded in tkinter and opencv
-
+2. A webcam interface through the OpenCV library
+2. A graphichal user interface coded in tkinter 
 
 #### Methods
-The first step of this project is to create a working LapSRN in Pytorch. The discriminators in the LapSRN will use the Leaky ReLU activation function as they mitigate the effects of ReLUs dying when a large gradient is passed through. A pretrained network will be further trained on facial images. The training data for the network will be the CelebFaces Attributes Dataset (CelebA). The images will be split  into training and testing sets, downsampled, centered, and fed into the network. The output will then be compared to the ground truth images. The image upscaling process is illustrated in Figure 1. 
+The first step of this project was to create a working LapSRN in Pytorch. The discriminator in the network uses the Leaky ReLU activation function as it mitigates the effects of ReLUs dying when a large gradient is passed through them. A pretrained network (sourced from the LapSRN paper code) was further trained on facial images. The training data for the network was the CelebFaces Attributes Dataset (CelebA). The images were split into training and testing sets, downsampled, and fed into the network. The output was compared to the ground truth images. The image upscaling process is illustrated in the figure below. 
 
+------
 ![alt text](https://github.com/vrishabcommuri/Laplacian-CNN-Super-Resolution/blob/master/samples/upsampling_process.png "LapSRN Upsampling Process")
 
 The image upscaling process carried out by the LapSRN. An input is fed into the rightmost level of the pyramid. The process of extracting nonlinear features and then upsampling via transposed convolutional layers is repeated at each level of the pyramid. Though this diagram shows three such layers, the adaptation of the LapSRN implemented in this project only has two levels, yielding an upsampled image 4x upscaled as opposed to 16x upscaled in a network with three layers.
+------
 
+After the scripts for interfacing with the LapSRN were complete, an application was created to allow the user to easily edit and send downsampled images. The application utilizes opencv and tkinter to interface with the user's webcam and create the user interface respectively.
 
-After the scripts for interfacing with the LapSRN are complete, an application will be created that facilitates communication between machines. The application will utilize opencv and tkinter to interface with the webcam and create the user interface respectively.
+### Results
 
-### Term Project Summary
-During the weeks leading up to the end of the semester, there are four aspects of the project that were started and then completed: creating a LapSRN in pytorch, creating scripts for data preprecessing, writing the software so that the application can save and load images upsampled in different manners to facilitate comparison, and writing the software for the user interface.  
+### TODO
 
 
