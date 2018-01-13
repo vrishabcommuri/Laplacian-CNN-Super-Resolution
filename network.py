@@ -11,7 +11,7 @@ The Net and _Conv_Block classes are adapted from the LapSRN paper:
 paper: http://vllab.ucmerced.edu/wlai24/LapSRN/papers/cvpr17_LapSRN.pdf
 github: https://github.com/twtygqyy/pytorch-LapSRN
 
-matlab file interface adapted from:
+file interface adapted from:
 
 github: https://github.com/BUPTLdy/Pytorch-LapSRN/blob/master/test.py
 
