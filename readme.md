@@ -22,7 +22,6 @@ The first step of this project was to create a working LapSRN in Pytorch. The di
 
 ***
 ![alt text](https://github.com/vrishabcommuri/Laplacian-CNN-Super-Resolution/blob/master/samples/upsampling_process.png "LapSRN Upsampling Process")
-***
 
 The image upscaling process carried out by the LapSRN. An input is fed into the rightmost level of the pyramid. The process of extracting nonlinear features and then upsampling via transposed convolutional layers is repeated at each level of the pyramid. Though this diagram shows three such layers, the adaptation of the LapSRN implemented in this project only has two levels, yielding an upsampled image 4x upscaled as opposed to 16x upscaled in a network with three layers.
 
