@@ -6,12 +6,12 @@ CMU 15-112 Term Project
 Applications such as Snapchat and Facebook provide streamlined platforms for sending images between users. However, due to the high volume of images transferred between users on these platforms, photos sent through these applications are either downsampled or captured at a lower resolution than the resolution of a user's camera. This facilitates lower transfer times for the sender, but results in inferior-quality photos for the recipient.
 
 ### Aim
-To address the limitations presented above, the use of a Laplacian Pyramid Super Resolution Network (LapSRN) is proposed to quickly upsample a downsampled or natively low-resolution facial image for a receiving user. Allowing images to be transferred at an extremely low resolution will reduce the cost of data transfer and improve latency for users.
+To address the limitations presented above, the use of a Laplacian Pyramid Super Resolution Network (LapSRN) is implemented to quickly upsample a downsampled or natively low-resolution facial image for a receiving user. Allowing images to be transferred at an extremely low resolution reduces the cost of data transfer and improves latency for users.
 
 ### Methodology
-The methods that will be utilized to complete this project are outlined in this section.
+The methods that were utilized to complete this project are outlined in this section.
 #### Components
-The components for this project, inluding libraries, hardware, and the LapSRN network are listed below. All code will be implemented in Python.
+The components for this project, inluding libraries, hardware, and the LapSRN network are listed below. All code is implemented in Python.
 
 1. A LapSRN coded in the Pytorch deep learning library
 2. A webcam interface through the OpenCV library
@@ -57,4 +57,10 @@ If you liked these animations, here is a fun video I made detailing the project'
 
 * Enable interface between different machines. 
 * Enable the user to send color images
+
+### References
+[LapSRN paper](https://arxiv.org/abs/1710.01992)
+
+
+
 
