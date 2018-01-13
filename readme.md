@@ -20,11 +20,11 @@ The components for this project, inluding libraries, hardware, and the LapSRN ne
 #### Methods
 The first step of this project was to create a working LapSRN in Pytorch. The discriminator in the network uses the Leaky ReLU activation function as it mitigates the effects of ReLUs dying when a large gradient is passed through them. A pretrained network (sourced from the LapSRN paper code) was further trained on facial images. The training data for the network was the CelebFaces Attributes Dataset (CelebA). The images were split into training and testing sets, downsampled, and fed into the network. The output was compared to the ground truth images. The image upscaling process is illustrated in the figure below. 
 
-------
+---
 ![alt text](https://github.com/vrishabcommuri/Laplacian-CNN-Super-Resolution/blob/master/samples/upsampling_process.png "LapSRN Upsampling Process")
 
 The image upscaling process carried out by the LapSRN. An input is fed into the rightmost level of the pyramid. The process of extracting nonlinear features and then upsampling via transposed convolutional layers is repeated at each level of the pyramid. Though this diagram shows three such layers, the adaptation of the LapSRN implemented in this project only has two levels, yielding an upsampled image 4x upscaled as opposed to 16x upscaled in a network with three layers.
-------
+---
 
 After the scripts for interfacing with the LapSRN were complete, an application was created to allow the user to easily edit and send downsampled images. The application utilizes opencv and tkinter to interface with the user's webcam and create the user interface respectively.
 
