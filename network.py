@@ -117,11 +117,11 @@ def upscale(name, data, factor):
 	pix_gt_arr = np.array(pix_gt)
 	pix_down = img.resize((factor,factor), Image.BICUBIC)
 	pix_down_arr = np.array(pix_down)
-	sio.savemat('./np_vector2.mat', {'down':pix_down_arr})
+	sio.savemat('./np_matrix_input.mat', {'down':pix_down_arr})
 	cnn = Net()
 	cnn.load_state_dict(torch.load('params.pkl'))
 
-	low_res = sio.loadmat("./np_vector2.mat")['down']
+	low_res = sio.loadmat("./np_matrix_input.mat")['down']
 
 	low_res = low_res.astype(float) 
 	_input = low_res/255.0
