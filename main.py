@@ -478,7 +478,7 @@ def redrawAll(canvas, data):
     else:
         data.frozen = True
     if data.screen == 'introscreen':
-        pic2 = cv2.imread('1.jpg',1)
+        pic2 = cv2.imread('background.jpg',1)
         data.background = opencvToTk(pic2)
         canvas.create_rectangle(0,0, data.width, data.height, fill="black", width=0)
         canvas.create_image(data.width/2,data.height/2,image=data.background)
