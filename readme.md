@@ -37,7 +37,7 @@ After the scripts for interfacing with the LapSRN were complete, an application 
 Using this network, images of 512 x 512 pixels were downsampled using bicubic interpolation to 128 x 128 pixels, saved, and upsampled back to 512 x 512 pixels. The results presented with good preservation of quality and a compression ratio of 16:1 (512x512/128x128)! Here is a side-by-side comparison of an input and output pair:
 
 <p align="center"> 
-<img src="https://github.com/vrishabcommuri/Laplacian-CNN-Super-Resolution/blob/master/samples/result_1.gif">
+<img src="https://github.com/vrishabcommuri/Laplacian-CNN-Super-Resolution/blob/master/samples/result_1.png">
 </p>
 
 The input sizes can be any square size as well. As such, the input size can be slowly increased creating some very nice animations of the outputs. These outputs have input sizes ranging from 32 x 32 to 256 x 256 pixels and output sizes ranging from 128 x 128 to 1024 x 1024 pixels. 
